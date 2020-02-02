@@ -42,6 +42,8 @@ class Router {
                             model = route.model;
 
                             await route.model.load(paramValues);
+                        } else if(route.model) {
+                            model = route.model;
                         } else {
                             model = data;
                         }
